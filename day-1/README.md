@@ -107,3 +107,8 @@ let uniqueId = Symbol("id"); // Symbol
 - Variables store data and have different scopes based on `var`, `let`, or `const`.
 - JavaScript has multiple primitive types: `Boolean`, `null`, `undefined`, `Number`, `BigInt`, `String`, `Symbol`.
 - Always initialize `const` variables. Use `let` or `const` instead of `var` in modern code for better scoping.
+
+
+
+
+<a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#declarations'>refrence</a>
