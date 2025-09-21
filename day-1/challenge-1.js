@@ -1,13 +1,12 @@
-let dyak0xdb = '0xdb';       // ✅ String variable
-var age = 21;               // ✅ Number variable
-const birtyear = 2004;      // ✅ Const Number variable
+let dyak0xdb = '0xdb';     
+var age = 21;              
+const birtyear = 2004;      
 
 if(true){
-    var insideBlock = "I am inside"; // ✅ var inside if-block
+    var insideBlock = "I am inside";
 }
-console.log(insideBlock);   // ✅ var اجازه چاپ خارج از بلوک را می‌دهد
-
-let isStudent = true;       // ✅ Boolean variable
+console.log(insideBlock); 
+let isStudent = true;      
 
 let nothingHere;            
-nothingHere = "asd";        // ✅ undefined و بعد مقداردهی
+nothingHere = "asd";       
