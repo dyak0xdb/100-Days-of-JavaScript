@@ -1,4 +1,3 @@
-```markdown
 # JavaScript Datatypes
 
 JavaScript supports 8 datatypes that variables can hold. This document outlines these datatypes, provides examples, and explains related concepts like the `typeof` operator, strings, numbers, booleans, undefined, and empty values.
@@ -7,11 +6,11 @@ JavaScript supports 8 datatypes that variables can hold. This document outlines 
 
 | Type          | Description                                      |
 |---------------|--------------------------------------------------|
-| **String**    | A sequence of text characters enclosed in quotes |
-| **Number**    | A numeric value (integer or floating-point)      |
+| **String**    | a text character                                 |
+| **Number**    | A numeric value       |
 | **BigInt**    | A large integer beyond the Number range          |
 | **Boolean**   | Represents `true` or `false`                     |
-| **Object**    | A collection of key-value pairs                 |
+| **Object**    | {}                |
 | **Undefined** | A variable declared but not assigned a value     |
 | **Null**      | A primitive value representing object absence    |
 | **Symbol**    | A unique and immutable primitive identifier      |
@@ -55,7 +54,7 @@ let yNull = null;
 // Symbol
 const sym1 = Symbol();
 const sym2 = Symbol();
-```
+
 
 ## The `typeof` Operator
 
