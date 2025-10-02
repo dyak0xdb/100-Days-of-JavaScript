@@ -122,3 +122,78 @@ for (let a = 2, b = 20; a < b; a += 3, b -= 4) {
 💡 Key point:
 - The `finalExpression` (`a += 3, b -= 4`) runs **after the loop body** each round and affects the next round.
 - The loop stops only when the **condition becomes false**.
+
+# Nested Loops Explanation
+
+## Example 1
+
+```javascript
+for (let i = 1; i <= 3; i++) {       // outer
+  for (let j = 1; j <= 3; j++) {     // inner
+    console.log(i, j);
+  }
+}
+```
+
+### How to Detect These Loops? (A Simple Method)
+
+💡 **Mental Note:**
+
+1. **Outer Loop Analysis**  
+   - Outer loop: `let i = 1; i <= 3`  
+   - `i = 1, 2, 3` → **3 rounds** ✅
+
+2. **Inner Loop Analysis**  
+   - Inner loop: `let j = 1; j <= 3`  
+   - `j = 1, 2, 3` → **3 rounds** ✅
+
+3. **Calculate Total Rounds**  
+   - Outer rounds × Inner rounds = `3 × 3 = 9` total rounds
+
+4. **Execution Order**  
+   ```
+   1 1
+   1 2
+   1 3
+   2 1
+   2 2
+   2 3
+   3 1
+   3 2
+   3 3
+   ```
+
+---
+
+## Example 2
+
+```javascript
+for (let i = 1; i <= 4; i++) {       // outer
+  for (let j = 1; j <= 3; j++) {     // inner
+    console.log(i, j);
+  }
+}
+```
+
+### How to Detect
+
+- **Outer Loop**: `4` rounds  
+- **Inner Loop**: `3` rounds  
+- **Total Rounds**: `4 * 3 = 12`
+
+**Execution Order**  
+```
+1 1
+1 2
+1 3
+2 1
+2 2
+2 3
+3 1
+3 2
+3 3
+4 1
+4 2
+4 3
+```
+```
